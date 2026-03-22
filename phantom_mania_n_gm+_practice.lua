@@ -242,8 +242,8 @@ function PhantomManiaGame:drawScoringInfo()
 	end
 
 
-	if not self.clear then
-		love.graphics.printf("GM x "..string.format("%.2f", self.gm_pace).."  (x "..string.format("%.2f", math.min(self.tetrises*999/(self.level*31), 0))..")", text_x, 280, 350, "left")
+	if not self.clear and self.level < 999 then
+		love.graphics.printf("GM x "..string.format("%.2f", self.gm_pace).."  (x "..string.format("%.2f", math.max(self.tetrises*999/(self.level*31), 0))..")", text_x, 280, 350, "left")
 	else
 		love.graphics.printf("GM x "..string.format("%.2f", self.gm_multiple).."  (x "..string.format("%.2f", self.tetrises*999/(self.level*31))..")", text_x, 280, 350, "left")
 	end
