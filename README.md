@@ -1,6 +1,6 @@
 Repository of invisible tetris modes written for the Cambridge block stacker by me, Yoshimi :)
 ## Cambridge Download
-See [the Cambridge repository](https://github.com/cambridge-stacker/cambridge/releases/) for the application required to run these modes. Once installed, open the app and drop the .zip downloaded from this repository onto the window, choose "mode," and enjoy.
+See [the Cambridge repository](https://github.com/cambridge-stacker/cambridge/releases/) for the application required to run these modes. Once installed, open the app and drop the .lua files downloaded from this repository onto the window, choose "mode" for each entry, and enjoy.
 # Practice-Oriented Modes and Modifications
 ## Phantom Mania N GM+
 Clone of "Phantom Mania N" included in the base install of Cambridge with expanded grading and pace statistics. After the game ends, statistics shown are: 
