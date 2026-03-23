@@ -238,7 +238,7 @@ function PhantomManiaGame:drawScoringInfo()
 	love.graphics.printf(self.score, text_x, 160, 90, "left")
 	love.graphics.printf(self.tetrises, text_x, 220, 40, "left")
 	for i=0, table.getn(self.section_tetrises) do
-		love.graphics.printf(self.section_tetrises[i], text_x + 80 + 20*i, 220, 50, "left") -- section tetrises table is 0 indexed
+		love.graphics.printf(self.section_tetrises[i] % 10, text_x + 80 + 20*i, 220, 50, "left") -- section tetrises table is 0 indexed. 10 tetrises also displays as 0 to prevent text overlap. it's a band-aid solution but all the information is still there due to the total tetris display
 	end
 
 
